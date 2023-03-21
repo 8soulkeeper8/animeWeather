@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&display=swap');
+body{
+    font-family: 'Exo 2', sans-serif;
+    color: white;
+    background-color: #323544;
+}
+/* Footer */
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 14vh;
+    background-color: #1f202b;
+    font-size: 30px;
+  }
+  
+  .logo-container {
+    margin-left: 8vw;
+    justify-content: flex-start;
+    display: flex;
+  }
+  .logoss{
+    align-items: center;
+    justify-content: center;
+    margin-top: 6vh;
+    margin-left: 10px;
+  }
+  
+  .logo-container img {
+    max-height: 60px;
+    color: white;
+    margin-top: 3vh;
+  }
+  
+  /* Main Container */
+  .main-container {
+    margin-top: 13vh;
+    height: 34vh;
+    width: 70vw;
+    margin: 13vh auto;
+    display: flex;
+  }
+  .sub-container {
+    width: 15%;
+    height: 100%;
+    float: left;
+  }
+  .first-container{
+    width: 40%;
+    height: 68vh;
+    float: left;
+    border-radius: 15px 0 15px 15px;
+  }
+  .first-container.chet{
+    background-color: #1f202b;
+  }
+  .sub-container.chet{
+    background-color: #1f202b;
+  }
+  .sub-container.nechet{
+    background-color: #252935;
+  }
+  .sub-container.last-cont{
+    border-radius: 0 15px 15px 0;
+  }
+  .day{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .day1{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .weatherday{
+    height: 80%;
+    border-top: 2px solid #323544;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 1.9vw;
+    text-align: center;
+    white-space: pre-line;
+
+  }
+
+.iconWeather{
+  background-repeat: no-repeat;
+  background-position: center
+}
+.weatherday.anime{
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 5px;
+  width: 87%;
+  height: 87%;
+}
