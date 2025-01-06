@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&display=swap');
-body{
+
+body {
     font-family: 'Exo 2', sans-serif;
     color: white;
     background-color: #323544;
 }
+
 /* Footer */
 footer {
     display: flex;
@@ -12,72 +14,82 @@ footer {
     height: 14vh;
     background-color: #1f202b;
     font-size: 30px;
-  }
-  
-  .logo-container {
+}
+
+.logo-container {
     margin-left: 8vw;
     justify-content: flex-start;
     display: flex;
-  }
-  .logoss{
+}
+
+.logoss {
     align-items: center;
     justify-content: center;
     margin-top: 6vh;
     margin-left: 10px;
-  }
-  
-  .logo-container img {
+}
+
+.logo-container img {
     max-height: 60px;
     color: white;
     margin-top: 3vh;
-  }
-  
-  /* Main Container */
-  .main-container {
+}
+
+/* Main Container */
+.main-container {
     margin-top: 13vh;
     height: 34vh;
     width: 70vw;
     margin: 13vh auto;
     display: flex;
-  }
-  .sub-container {
+}
+
+.sub-container {
     width: 15%;
     height: 100%;
     float: left;
-  }
-  .first-container{
+}
+
+.first-container {
     width: 40%;
     height: 68vh;
     float: left;
     border-radius: 15px 0 15px 15px;
-  }
-  .first-container.chet{
+}
+
+.first-container.chet {
     background-color: #1f202b;
-  }
-  .sub-container.chet{
+}
+
+.sub-container.chet {
     background-color: #1f202b;
-  }
-  .sub-container.nechet{
+}
+
+.sub-container.nechet {
     background-color: #252935;
-  }
-  .sub-container.last-cont{
+}
+
+.sub-container.last-cont {
     border-radius: 0 15px 15px 0;
-  }
-  .day{
+}
+
+.day {
     height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .day1{
+}
+
+.day1 {
     height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .weatherday{
+}
+
+.weatherday {
     height: 80%;
-    border-top: 2px solid #323544;
+    border-top: 2px solid #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,18 +97,148 @@ footer {
     padding: 0 1.9vw;
     text-align: center;
     white-space: pre-line;
+    
+}
 
+.iconWeather {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.weatherday.anime {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 5px;
+    width: 87%;
+    height: 87%;
+}
+
+/* --- Адаптивная верстка --- */
+
+/* Для компьютера (по умолчанию) */
+@media (min-width: 1200px) {
+    .main-container {
+        width: 70vw;
+    }
+
+    .sub-container {
+        width: 15%;
+    }
+
+    .first-container {
+        width: 40%;
+    }
+}
+
+
+
+
+@media (max-width: 1050px) and (min-width: 768px){
+  .first-container {
+     height: 130%;
   }
 
-.iconWeather{
-  background-repeat: no-repeat;
-  background-position: center
+  .day1 {
+    height: 15.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .weatherday.anime {
+    
+    height: 80%;
+
+  }
 }
-.weatherday.anime{
-  background-size:contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-y: 5px;
-  width: 87%;
-  height: 87%;
+
+
+@media (max-width: 836px) {
+  body {
+      font-size: 14px;
+  }
+
+  footer {
+      height: 10vh;
+  }
+
+  .main-container {
+      flex-direction: column;
+      align-items: center;
+      width: 90vw;
+      margin-top: 5vh;
+      gap: 2vh; /* Добавляем пространство между элементами */
+      
+  }
+
+  .sub-container {
+      width: 90%;
+      margin-bottom: 2vh; /* Расстояние между контейнерами */
+  }
+
+  .sub-container {
+    min-height: 10vh; /* Минимальная высота, чтобы контейнеры не сжимались слишком сильно */
 }
+
+  .first-container {
+      width: 75%;
+
+      min-height: 30vh;
+  }
+
+  .logoss {
+      font-size: 1.1em;
+  }
+
+  .logo-container img {
+      max-height: 40px;
+  }
+}
+
+/* Для мобильного устройства (ширина экрана до 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    footer {
+        height: 10vh;
+    }
+
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        margin-top: 5vh;
+    }
+
+    .sub-container {
+        width: 90%;
+        margin-bottom: 2vh;
+    }
+
+    .first-container {
+        width: 130%;
+    }
+
+    .logoss {
+      font-size: 23px;
+    }
+
+    .logo-container img {
+        max-height: 40px;
+    }
+}
+
+@media (max-width: 346px) {
+
+  .logoss {
+    font-size: 20px;
+}}
+
+@media (max-width: 223px) {
+
+  .logoss {
+    font-size: 15px;
+}}
